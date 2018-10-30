@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+# Initialize
+sudo apt -y update
+sudo apt -y upgrade
+
+# git
+sudo apt install git
+git config --global user.name $1
+git config --global user.email $2
+git config --global color.ui auto
+git config --global core.quotepath off
+git config --global credential.helper store
+
 # pyenv
 curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 # .bashrc 에 하기 내용 추가
