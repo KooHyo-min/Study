@@ -1,0 +1,5 @@
+pytest
+pyflakes
+flake8
+ipython
+Django==2.1.2
